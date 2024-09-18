@@ -1,0 +1,66 @@
+.amazing{
+height: 456.094px;
+width: 100%;
+/* background-color: #2b2b2b; */
+margin-top: 18px;
+display: flex;
+justify-content: center;
+.amazing-center{
+  width: 70%;
+  /* background-color: lightgray; */
+  border-radius: var(--border-radius-max);
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 18px;
+  padding: 18px 105px 40px 105px;
+
+  /*
+  because i used .top-heading in general css
+  i commented .amazing-center__top-section{}
+  because it's kinda repeat in popular section too!!!
+  */
+  /* .amazing-center__top-section{
+    font-family: var(--fontiran);
+    font-size: 21px;
+    font-weight: 500px;
+    text-align: center;
+    background-color: red;
+    margin-bottom: 37px;
+  } */
+
+
+  .amazing-center__bottom-section{
+    margin-top: 37px;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 57px;
+    /* justify-content: center; */
+    /* height: 132px; */
+    /* height: 262px; */
+    height: fit-content;
+    /* background-color: chartreuse; */
+    div{
+      /* background-color: rgb(251, 255, 0); */
+      /* flex: 1; */
+      height: 50%;
+      width: 90.39px;
+      img{
+        width: 100%; 
+        object-fit: cover;
+        margin-bottom: 3px;
+        
+      }
+      display: -webkit-box;
+      line-clamp: 2;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      text-align: center;
+      font-size: 12px;
+      font-family: var(--fontiran);
+      font-weight: 700;
+      line-height: 25px;
+    }
+  }
+  
+}
+}

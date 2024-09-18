@@ -1,0 +1,135 @@
+.shegeftSuper {
+  width: 100%;
+  height: 110px;
+  /* background-color: orange; */
+  margin: 17px 0;
+  display: flex;
+  justify-content: center;
+  .shegeftSuper-center {
+    /* background-color: rgb(235, 238, 237); */
+    width: 1336px;height: inherit;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-image: url(../svg/shegeftSuper/background-svg.svg),
+      linear-gradient(to right, rgb(235, 238, 237), rgb(235, 238, 237));
+    background-size: contain;
+    background-position: left;
+
+    
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    border-radius: var(--border-radius-medium);
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 147px;
+    .shegeftSuper-center__right-section {
+      /* width: 462px; */
+      width: fit-content;
+      height: 100%;
+      /* background-color: aqua; */
+      display: flex;
+      align-items: center;
+      :nth-child(2) {
+        /* background-color: rgb(255, 0, 255); */
+        margin: 0 16px;
+        width: 250px;
+        height: 28px;
+      }
+      :nth-child(3) {
+        background-color: rgb(2, 154, 73);
+        font-size: 14px;
+        font-weight: 700;
+        /* overflow: hidden; */
+        font-family: var(--fontiran);
+        padding: 9px 16px;
+        border-radius: 14px;
+        /* border-radius: 50%; */
+        color: white;
+        line-height: 14px;
+        span {
+          font-family: var(--fontnaz);
+          font-size: 18px;
+          font-weight: 700;
+          margin: 0 5px;
+        }
+      }
+    }
+    .shegeftSuper-center__left-section {
+      flex: 1;
+      height: 100%;
+      /* background-color: blueviolet; */
+      column-gap: 7px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      .shegeftProduct {
+        width: 78px;
+        height: 78px;
+        border-radius: 36.5px;
+        background-color: transparent;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        position: relative;
+        /* overflow: hidden; */
+        .price-offer {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background-color: rgb(211, 47, 47);
+          color: white;
+          font-size: 14px;
+          font-weight: 600;
+          padding: 0 8px;
+          border-radius: 10px;
+          font-family: var(--fontnaz);
+        }
+        img {
+          height: 70%;
+          width: 70%;
+          object-fit: cover;
+        }
+      }
+
+      /* :nth-last-of-type(1){
+        flex:1;
+        height: 50px;
+        padding: 12px 20px;
+        
+        img{                  chera arrowleft.svg ke az digikala down kardam kar nemikard yani nemishod bozorg koochikesh kard majboor shodam az ye svg dg estefade konam
+          width: 5px;
+          height: 5px;
+        }
+      } */
+
+      .kalaha {
+        /*majboor shodam ba padding var beram ta leftarrow.svg jaye khodesh gharar begire*/
+        flex: 1;
+        height: 50px;
+        padding: 6px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-family: var(--fontiran);
+        color: rgb(2, 154, 73);
+        background-color: white;
+        border-radius: 30px;
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 6px;
+        }
+        .number {
+          font-family: var(--fontnaz);
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.shops-center{
+  width: 1253px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  /* background-color: aqua; */
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 80px;
+  .shops-center__innerDiv{
+    height: 101px;
+    width: 53px;
+    /* background-color: red; */
+    img{
+      width: inherit;
+      object-fit: cover;
+    }
+    span{
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      
+      font-size: 11px;
+      font-family: var(--font);
+      text-align: center;
+      /* padding: 0 2px; */
+      line-height: 23.87px;
+    }
+    .img-container{
+      width: inherit;
+      height: 53px;
+      border-radius: 50%;
+      background-color: rgb(240, 240, 241);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 30px;
+        height: 20px;
+      }
+    }
+  }
+}

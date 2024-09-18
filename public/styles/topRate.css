@@ -1,0 +1,100 @@
+.topRate{
+  height: 815px;
+  width: 100%;
+  /* background-color: #2b2b2b; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 17px;
+  .topRate-center{
+    /* background-color: lightgreen; */
+    width: 70%;
+    height: inherit;
+    border-radius: var(--border-radius-max);
+    padding: 16px 12px 0 12px;
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px solid rgb(221, 221, 221);
+    .top-heading{
+      margin-bottom: 24px;
+      height: 21px;
+      line-height: 21px;
+      width: 100%;
+    }
+    .topRate-center__bottom-section{
+      background-color: rgb(221, 221, 221);
+      flex:1;
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 1px;
+      column-gap: 1px;
+
+      .grid-cell{
+        background-color: white;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 12px 8px ;
+        .image-container{
+          width: 100%;
+          height: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+          }
+        }
+        .productPrice{
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: space-between;
+          /* background-color: red; */
+          margin-top: 15px;
+          width: 100%;
+          height: fit-content;
+    
+          .procuctPrice__rightSection{
+            background-color: rgb(211, 47,47);
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 0 8px;
+            border-radius: 10px;
+            font-family: var(--fontnaz);
+          }
+          .procuctPrice__leftSection{
+            font-size: 22px;
+            display: flex;
+            flex-flow: row wrap;
+            font-family: var(--fontnaz);
+            font-weight: 600;
+            align-items: center;
+            
+            img{
+              width: 16px;
+              height: 16px;
+              object-fit: cover;
+              margin-right: 4px;
+            }
+          }
+      
+        }
+        .old-price{
+          color: gray;
+          display: flex;
+          font-size: 14px;
+          font-family: var(--fontnaz);
+          justify-content: flex-end;
+          margin-left: 20px;
+          text-decoration: line-through;
+          
+         }
+      }
+    }
+  }
+}

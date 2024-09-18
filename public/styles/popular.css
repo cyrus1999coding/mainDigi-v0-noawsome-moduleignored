@@ -1,0 +1,96 @@
+.popular{
+  height: 225px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: #2b2b2b; */
+  margin:17px 0 ;
+  .popular-center{
+      height: inherit;
+      width: 70%;
+      /* background-color: aqua; */
+      padding: 24px 0;
+      display: flex;
+      flex-flow: column wrap;
+    /*popular-center__top-section {
+        .top-heading {
+          font-family: var(--fontiran);
+          font-size: 21px;
+          font-weight: 500px;
+          text-align: center;
+          background-color: red;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 5px;
+        }
+      }
+    */
+    border: 1px solid rgb(224, 224, 226);
+    border-radius: var(--border-radius-max);
+   .popular-center__bottom-section{
+    margin-top: 5px;
+    background-color: rgb(240, 240, 241);
+    width: 100%;
+    flex: 1; 
+    /* چرا 
+    flex:1 
+    قسمت باقی مانده من را نارنجی نمیکند و مثل 
+    align-items:stretch;
+    داره رفتار میکنه !
+    برای عمین محبور شدم 
+    height 
+    بدم 
+                اشتباها این دیو در 
+                popular-center__top-section
+                فرار گرفته بود و داشت کارو خراب میکرد
+
+    */
+    /* height: 166px; */
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 16px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+   }
+  }
+}
+/*
+i useed 
+
+.top-heading{
+  font-family: var(--fontiran);
+  font-size: 21px;
+  font-weight: 500px;
+  text-align: center;
+  margin-bottom: 37px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+that i wrote in general so i can use it for .popular & also for .amazing
+*/

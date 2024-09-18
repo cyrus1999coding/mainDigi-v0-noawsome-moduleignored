@@ -1,0 +1,516 @@
+footer{
+  margin-top:48px; 
+  width: 100%;
+  border-top: 1px solid rgb(224, 224, 226);
+  /*
+  chera dorost  margin-top: 27px; nagereft ? be khatere padding topiye ke be <body> dadam? 
+  */
+  width: 100%;
+  height: fit-content;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  .footer-center{
+    width: 1636px;
+    height: inherit;
+    /* background-color: aqua; */
+    padding-top: 32px;
+    .footer-backup__topSection{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      div:nth-of-type(1){
+        width: calc(195px + 16px);
+        height: 30px;
+        /* background-color: orange; */
+        img{
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+        }
+      }
+      button:nth-of-type(1){
+        width: 138px;
+        height: 40px;
+        background-color: blue;
+        border: 1px solid rgb(224, 224, 226);
+        padding: 8px 16px;
+        font-family: var(--fontiran);
+        position: relative;
+        color: rgb(161, 163, 168);
+        background-color: white;
+        border-radius: var(--border-radius-min);
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        a{
+          text-decoration: none;
+          line-height: 40px;
+          color: rgb(161, 163, 168);
+        }
+        &::before{
+          content: '\005E';
+          display: block;
+          position: absolute;
+          top: 25%;
+          left:15%;
+          font-size: 20px;
+          color: rgb(161, 163, 168);
+          font-weight: 1000; /*nemigairad*/
+        }
+
+      }
+    }
+    .footer-number{
+      /* height: 17px;
+      width: 529px;
+      background-color: yellow;
+      color: rgb(63, 64, 100);
+      margin-top: 22px;
+      p{
+        font-size: 12px;
+        font-family: var(--fontiran);
+        display:flex;
+          span{
+          padding-left: 20px;
+          padding-right: 20px;
+          width: 2px;
+          height: 14px;
+          color:  rgb(161, 163, 168);
+          }
+      }
+       */
+      margin-top: 22px;
+      display: flex;
+      flex-flow: row wrap;
+      height: 17px;
+      width: 529px;
+      
+      /* background-color: yellow; */
+      .div__footerNum{
+        font-size: 12px;
+        color: rgb(63, 64, 100);
+      }
+      .col{
+        width:41px;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+          width: 1px;
+          height:13px;
+          background-color:rgb(161, 163, 168);
+        }
+      }
+      
+    }
+    .boxees{
+      margin-top: 40px;
+      width: 100%;
+      height: 103.86px;
+      /* background-color: #8b8b8b; */
+      display: flex;
+      div{
+        flex: 1 ;
+        /* background-color: lightgreen; */
+        height: inherit;
+        padding: 12px 0;
+        display: flex;
+        flex-flow: column wrap;
+        div:nth-of-type(1){
+          all: unset;
+          display: flex;
+          justify-content: center;
+          height: 56px;
+          /* background-color: lightcoral; */
+          img{
+            height: inherit;
+          }
+        }
+        div:nth-of-type(2){
+          all: unset;
+          flex: 1; /*to mehvare columni dg flex:1 kar nemikone ?*/
+          /* height: calc(103.86px - 56px); */
+          /*ba all unset hal shod*/
+          width: 100%;
+          /* background-color: blueviolet; */
+          font-size: 11px;
+          font-family: var(--fontiran);
+          text-align: center;
+          color: rgb(63, 64, 100);
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          margin-top: 4px;
+        }
+      }
+    }
+    .moreGuide{
+      height: 270.16px;
+      /* background-color: #2b2b2b; */
+      width: 100%;
+      margin-top: 40px;
+      display: flex;
+      column-gap: 95px;
+      div{
+        padding-right: 8px;
+        flex: 0.3;
+        height: inherit;
+        /* background-color: lightgreen; */
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 14px;
+        /* background-color: red; */
+        h1{
+          font-size: 16px;
+          font-family: var(--fontiran);
+          color: #1b1b1b;
+        }
+        a{
+          text-decoration: none;
+          font-family: var(--fontiran);
+          font-size: 14px;
+          color:  rgb(129, 133, 139);
+        }
+      }
+      div:nth-last-of-type(1){
+        /* background-color: red; */
+        h1{
+          font-size: 16px;
+          font-family: var(--fontiran);
+          color: #1b1b1b;
+        }
+        div:nth-of-type(1){
+          all: unset;
+          display: flex;
+          width: 90%;
+          height: 40px;
+          /* background-color: red; */
+          margin-top: 12px;
+          div{
+            all: unset;
+            flex: 1;
+            height: inherit;
+            display: flex;
+            justify-content: flex-start;
+            img{
+              height: inherit;
+              cursor: pointer;
+            }
+          }
+        }
+        div:nth-of-type(2){
+          all: unset;
+          width: 100%;
+          height: 48px;
+          /* background-color: darkorange; */
+          display: flex;
+          column-gap: 7px;
+          input[type=email]{
+            /* background-color: yellow; */
+            border: none;
+            border-radius: var(--border-radius-min);
+            width: 260.8px;
+            height: inherit;
+            padding: 0 16px;
+            outline: none;
+            background-color: rgb(240, 240, 241);
+            
+            &::placeholder{
+              font-size:15px;
+              font-family: var(--fontiran);
+              color: rgb(181, 181, 181);
+            }
+          }
+          button{
+            background-color: rgb(224, 224, 226);
+            height: inherit;
+            flex: 1;
+            border-radius: var(--border-radius-min);
+            line-height: 48px;
+            font-size:16px ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--fontiran);
+            color: white;
+            border: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+    .digiDownload{
+      height: 76px;
+      width: 100%;
+      background-color: red;
+      border-radius: var(--border-radius-min);
+      background-color: rgb(60, 75, 109);
+      padding: 8px 20px;
+      display: flex;
+      div:nth-of-type(1){
+        /* width: calc(228.31px + 44px ); */
+        width: fit-content;
+        /* background-color: aqua; */
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        column-gap: 16px;
+        div:nth-of-type(1){
+          all: unset;
+          width: 44px ;
+          /* background-color: purple; */
+          display: flex;
+          align-items: center;
+          img{
+            width: 44px;
+            height: 44px;
+            background-color: transparent;
+          }
+        }
+        div:nth-of-type(2){
+          all: unset;
+          width: fit-content;
+          /* background-color: #8b8b8b; */
+          display: flex;
+          align-items: center;
+          font-size: 19px;
+          color: white;
+          font-family: var(--fontiran);
+          font-weight: bold;
+        }
+      }
+      div:nth-of-type(2){
+        all: unset;
+        flex: 1;
+        height: 100%;
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 16px;
+        div{
+          all: unset;
+          height: 100%;
+          width: 142px;
+          /* background-color: aqua; */
+          display: flex;
+          align-items: center;
+          img{
+            height: 44px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: var(--border-radius-min);
+          }
+        }
+      }
+      div:nth-of-type(3){
+        all: unset;
+        height: 100%;
+        width: 60px;
+        /* background-color: yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        
+        img{
+          width: 42px;
+          height: 44px;
+          background-color: white;
+          border-radius: var(--border-radius-min);
+        }
+      }
+    }
+    .onlineShopping{
+      width: 100%;
+      height:fit-content;
+      /* height: 224.031px; */
+      padding: 32px 0;
+      margin: 32px 0;
+      border-top: 1px solid rgb(240, 240, 241);
+      border-bottom: 1px solid rgb(240, 240, 241);
+      display: flex;
+      flex-flow: row wrap;
+      div:nth-of-type(2){
+        width: 441.19px;
+        height: 100%;
+        /* background-color: blue; */
+        div:first-of-type{
+          all: unset;
+          display: flex;
+          width: 100%;
+          height: 109px;
+          column-gap: 8px;
+          justify-content: flex-end;
+          div{
+            all: unset;
+            height: 109px;
+            width: 109px;
+            /* background-color: orange; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid  rgb(240, 240, 241) ;
+            border-radius: var(--border-radius-min);
+            img{
+              width: 75px;
+              /* height: 75px; */
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      div:nth-of-type(1){
+        all: unset;
+        flex: 1;
+        height: 100%;
+        box-sizing: border-box;
+        /* background-color: rgb(255, 0, 0); */
+        padding-left: 40px;
+        display: flex;
+        flex-flow: column wrap;
+        div:first-of-type{
+          all: unset;
+          max-height: 125px;
+          width: 100%;
+          /* background-color: aqua; */
+          overflow: hidden;
+          h1{
+            margin-bottom: 7px;
+            font-family: var(--fontiran);
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            color: rgb(98, 102, 109);
+          }
+          p{
+            font-size: 12px;
+            font-family: var(--fontiran);
+            line-height: 25px;
+            color: rgb(129, 133, 139);
+          }
+        }
+        div:last-of-type{
+          all: unset;
+          height: fit-content;
+          width: 100%;
+          /* background-color: rgb(9, 255, 0); */
+          margin-top: 20px;
+          a{
+            text-decoration: none;
+            font-family: var(--fontiran);
+            color:  rgb(25, 191, 211); /*hamishe be img color midad ? ya svg iye khube ?*/
+            font-size: 12px;
+            font-weight: 500;
+          }
+          img{
+            width: 18px;
+            height: 18px;
+            margin-bottom: -6px;
+          }
+        }
+  
+  
+  
+  
+        /* overflow: hidden; */
+        /* text-overflow: ellipsis;  elipsis faghat baraye 1 khat kar mikone? */
+        /* white-space: nowrap; */
+  
+        /* 
+        h1{
+          margin-bottom: 7px;
+          font-family: var(--fontiran);
+          font-size: 20px;
+          letter-spacing: 1px;
+          font-weight: 600;
+          color: rgb(98, 102, 109);
+        } */
+  
+  
+        /* pre{
+          width: 100%;
+        } */ /*baes mishod ke containerssh bish az had bozorg she khode digikala az br estefade karde bood jalebe chon <p> in moshkelo be vojood nemiare*/
+       
+       
+        /* p{
+          font-size: 13px;
+          font-family: var(--fontiran);
+          line-height: 25px;
+        } */
+      }
+    }
+    .rights{
+      width: 100%;
+      height: fit-content;
+      /* background-color: aqua; */
+      padding-bottom: 32px;
+      text-align: center;
+      color:  rgb(129, 133, 139);
+      font-size: 11px;
+      font-family: var(--fontiran);
+    }
+  }
+  
+
+
+
+  
+  .brands{
+    width: 100%;
+    height: 161px;
+    background-color: rgb(240, 240, 241);
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    .brands-center{
+      width: 88%;
+      height: inherit;
+      background-color:rgb(224, 224, 226);
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      div:nth-of-type(1){
+        all:unset ;
+        width: 100%;
+        height: 80px;
+        background-color:rgb(224, 224, 226);
+        display: flex;
+        column-gap: 1px;
+        div{
+          all: unset;
+          flex: 1;
+          /* background-color: red; */
+          background-color: rgb(240, 240, 241);
+          /* height: 100%; */
+          padding: 0 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      div:nth-of-type(2){
+        background-color:rgb(224, 224, 226);
+        width: 100%;
+        height: 80px;
+        display: flex;
+        column-gap: 1px;
+        div{
+          all: unset;
+          flex: 1;
+          /* background-color: yellow; */
+          background-color: rgb(240, 240, 241);
+          height: inherit;
+          padding: 0 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    } 
+  }
+}

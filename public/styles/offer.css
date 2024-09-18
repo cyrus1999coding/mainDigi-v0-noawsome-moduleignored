@@ -1,0 +1,159 @@
+.offer{
+  width: 100%;
+  /* height: 295px; */
+  height: 305px;
+  /* height: 330px; */
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+}
+.offer-center{
+  width: 70%;
+  height: inherit;
+  background-color: rgb(216, 47, 78);
+  border-radius: var(--border-radius-max);
+  padding: 20px 0;
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+    img{
+      height: 132px;
+      width: 132px;
+      object-fit: cover;
+      border-radius: var(--border-radius-min);
+    }
+    .productInfo{
+      margin-top: 5px;
+      font-size: 12px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-align: right;
+      height: 32px;                     /*inja majboor shodam height bedam ta vertical align doros she age pakesh konam khata ro mibinam*/
+    }
+    .productPrice{
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+      /* background-color: red; */
+      margin-top: 15px;
+      width: 100%;
+      height: fit-content;
+
+      .procuctPrice__rightSection{
+        background-color: rgb(211, 47,47);
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0 8px;
+        border-radius: 10px;
+        font-family: var(--fontnaz);
+      }
+      .procuctPrice__leftSection{
+        font-size: 16px;
+        display: flex;
+        flex-flow: row wrap;
+        font-family: var(--fontnaz);
+        font-weight: 600;
+        align-items: center;
+        
+        img{
+          width: 16px;
+          height: 16px;
+          object-fit: cover;
+          margin-right: 4px;
+        }
+      }
+  
+    }
+    .old-price{
+      color: gray;
+      font-size: 14px;
+      font-family: var(--fontnaz);
+      margin-right: 80px;
+      text-decoration: line-through;
+      
+     }
+    .shegeft{
+      width: 88px;
+      height: 88px;
+    }
+    .smily{
+      width: 80px;
+      height: 80px;
+    }
+    .kaman{
+      height: 8px;
+      width: 8px;
+    }
+    .swiper-slide__innerDiv{
+      display: flex;
+      flex-flow: row wrap;
+      /* background-color: aqua; */
+      margin: 10px 0;
+      align-items: center;
+    }
+    .hour, .min , .sec{
+      background-color: whitesmoke;
+      padding: 5px 5px;
+      font-size: 15px;
+      font-family: Roboto;
+      border-radius: 3px;
+    }
+    .col{
+      color: white;
+    }
+  }
+  .transparent{
+    background-color: transparent;
+    font-size: 12px;
+    .swiper-slide__innerFlex{
+      display: flex;
+      flex-flow: row wrap;
+      height: 30px;
+      width: 100%;
+      /* background-color: aqua; */
+      justify-content: center;
+      align-items: center;
+      color: whitesmoke;
+      img{
+        height: 15px;
+      width: 15px;
+      margin-right: 3px;
+      }
+    }
+  }
+  }
+  .radius{
+    border-top-right-radius: var(--border-radius-min);
+    border-bottom-right-radius:var(--border-radius-min) ;
+  }
+  
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+    
+  }

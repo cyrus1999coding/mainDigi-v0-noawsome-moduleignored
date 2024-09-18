@@ -1,0 +1,104 @@
+.product{
+  width: 100%;
+  height: 420px;
+  /* background-color: #2b2b2b; */
+  display: flex;
+  justify-content: center;
+  .product-center{
+    width: 70%;
+    height: inherit;
+    /* background-color: rgb(240, 240, 241); */
+    column-gap: 1px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: var(--border-radius-max);
+    display: flex;
+    flex-flow: row wrap;
+    .product-center__child:nth-of-type(1){
+      border-left: 1px solid rgb(221, 221, 221);
+    }
+    .product-center__child:nth-of-type(2){
+      border-left: 1px solid rgb(221, 221, 221);
+    }
+    .product-center__child:nth-of-type(3){
+      border-left: 1px solid rgb(221, 221, 221);
+    }
+    /*آیا میشود اینجا از 
+    :not()
+    استفاده کرد؟
+    */
+    .product-center__child{
+      flex: 1;
+      display: flex;
+      flex-flow: column wrap;
+      height: inherit;
+      /* border-left: 1px solid  rgb(221, 221, 221); */
+      
+      /* background-color: orange; */
+      padding: 18px 18px 22px 28px;
+      .product-center__child__top-section{
+        height: 65.45px;
+        width: 100%;
+        /* background-color: aqua; */
+        h4{
+          margin-bottom: 5px;
+          font-weight: 550;
+        }
+        span{
+          color: rgb(129, 133, 139);
+          font-size: 11px;
+        }
+      }
+      .product-center__child__middle-section{
+        flex: 1;
+        width: 100%;
+        /* background-color: rgb(30, 255, 0); */
+        /* background-color: rgb(129, 133, 139); */
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        column-gap: 1px;
+        row-gap: 1px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        :nth-of-type(1) {
+          padding: 8px;
+          border-left: 1px solid   rgb(221, 221, 221);
+          border-bottom: 1px solid   rgb(221, 221, 221);
+        }
+        :nth-of-type(2) {
+          padding: 8px;
+          border-bottom: 1px solid  rgb(221, 221, 221);
+        }
+        :nth-of-type(3) {
+          padding: 8px;
+          border-left: 1px solid   rgb(221, 221, 221);
+        }
+        :nth-of-type(4) {
+          padding: 8px;
+        }
+      }
+      .product-center__child__bottom-section{
+        width: 100%;
+        height: 21px;
+        /* background-color: purple; */
+        margin-top: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none; /*ina chera kar nemikonan*/
+        text-decoration-line: none;
+
+        a{
+          color:rgb(25, 191, 211);
+          font-size: 12px;
+          margin-left: 4px;
+        }
+    
+      }
+    }
+
+  }
+}

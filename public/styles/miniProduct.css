@@ -1,0 +1,71 @@
+.miniProduct{
+  width: 100%;
+  height: 241.5px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  .miniProduct-center{
+    width: 1336px;
+    height: inherit;
+    display: flex;
+    /* background-color: orange; */
+    column-gap: 17px;
+    div{
+      flex: 1;
+      height: inherit;
+      background-color: blue;
+      /* overflow: hidden; */
+      border-radius: var(--border-radius-max);
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      .offpercent{
+        background-color: rgb(211, 47,47);
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0 8px;
+        border-radius: 10px;
+        position: absolute;
+        font-family: var(--fontnaz);
+      }
+      /*
+       برای miniProduct-section 2
+       عکس ها با اینکه 
+       width , height : inherit ;
+       داشتند باز هم به درستی 
+       div
+       مربوطه را تکمیل نمیکردند .. برای همین 
+       display: flex;
+      justify-content: center;
+      دادم که حداقل وسط قرار بگیرند
+      */
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        /* border-radius: inherit; */
+      }
+    }
+    /* :nth-child(1){
+      flex:1;
+      height:100%;
+      background-color: blue;
+    }
+    :nth-child(2){
+      flex:1;
+      height:100%;
+      background-color: blue;
+    }
+    :nth-child(3){
+      flex:1;
+      height:100%;
+      background-color: blue;
+    }
+    :nth-child(4){
+      flex:1;
+      height:100%;
+      background-color: blue;
+    } */
+  }
+}
